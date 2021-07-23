@@ -9,12 +9,10 @@ export default function DailySymptoms () {
     setActive(!active);
   };
 
-
-
   return (
     <div className="flex">
       <Sidebar />
-
+      
       <div className="flex flex-col items-center w-2/4 h-full space-y-2 m-8 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         

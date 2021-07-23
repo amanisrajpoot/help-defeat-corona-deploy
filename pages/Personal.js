@@ -3,13 +3,12 @@ import { useState } from 'react';
 import { Questions } from './components/Questions';
 import {Sidebar} from './components/Sidebar'
 
-export default function SelfTest() {
+export default function Personal() {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
     setActive(!active);
   };
-
 
 
   return (
