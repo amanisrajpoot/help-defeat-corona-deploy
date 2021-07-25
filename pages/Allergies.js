@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Allergy from './components/Allergy';
 import { useState } from 'react';
+import AllergyNone from './components/AllergyNone';
 
 export default function Allergies () {
   const [active, setActive] = useState(false);
@@ -30,23 +32,22 @@ export default function Allergies () {
           </div>
 
           
-          <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4 l-0 ">Heart Disease</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> High Blood Pressure</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Lung Disease</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Diabetes</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> NEUROLOGICAL DISEASE</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> KIDNEY/LIVER FAILURE</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> CANCER</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> WEAKENED IMMUNITY DUE TO DISEASE (HIV)</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SMOKER</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> PREGNANT</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SEVERE OBESITY </button>
+          <div className="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
+            <Allergy allergy="Heart Disease"/>
+            <Allergy allergy="High Blood Pressure"/>
+            <Allergy allergy="Lung Disease"/> 
+            <Allergy allergy="Diabetes"/> 
+            <Allergy allergy="NEUROLOGICAL DISEASE"/> 
+            <Allergy allergy="KIDNEY/LIVER FAILURE"/> 
+            <Allergy allergy="CANCER"/>
+            <Allergy allergy="WEAKENED IMMUNITY DUE TO DISEASE (HIV)"/>
+            <Allergy allergy="SMOKER"/> 
+            <Allergy allergy="PREGNANT"/> 
+            <Allergy allergy="SEVERE OBESITY"/>
           </div>
 
           <div class="flex flex-wrap items-center ml-4 text-sm w-full">
-            <button class="w-full bg-gray-200 rounded-xl p-4 m-4 mr-10">
-            NONE OF THE ABOVE</button>
+            <AllergyNone allergyNone="NONE OF THE ABOVE" />
           </div>
 
         </div> 

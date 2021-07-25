@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import History from './components/History';
+import HistoryNone from './components/HistoryNone';
 
 export default function MedicalHistory () {
   const [active, setActive] = useState(false);
@@ -32,22 +34,21 @@ export default function MedicalHistory () {
 
           
           <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4 l-0 ">Heart Disease</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> High Blood Pressure</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Lung Disease</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Diabetes</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> NEUROLOGICAL DISEASE</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> KIDNEY/LIVER FAILURE</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> CANCER</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> WEAKENED IMMUNITY DUE TO DISEASE (HIV)</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SMOKER</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> PREGNANT</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SEVERE OBESITY </button>
+            <History history="Heart Disease"/>
+            <History history="High Blood Pressure"/>
+            <History history="Lung Disease"/> 
+            <History history="Diabetes"/> 
+            <History history="NEUROLOGICAL DISEASE"/> 
+            <History history="KIDNEY/LIVER FAILURE"/> 
+            <History history="CANCER"/>
+            <History history="WEAKENED IMMUNITY DUE TO DISEASE (HIV)"/>
+            <History history="SMOKER"/> 
+            <History history="PREGNANT"/> 
+            <History history="SEVERE OBESITY"/>
           </div>
 
           <div class="flex flex-wrap items-center ml-4 text-sm w-full">
-            <button class="w-full bg-gray-200 rounded-xl p-4 m-4 mr-10">
-            NONE OF THE ABOVE</button>
+            <HistoryNone historyNone="NONE OF THE ABOVE" />
           </div>
 
         </div> 
