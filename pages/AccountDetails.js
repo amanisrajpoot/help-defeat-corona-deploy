@@ -11,7 +11,7 @@ export default function AccountDetails () {
   return (
     <div className="flex flex-col items-center">
 
-      <div className="flex justify-center w-2/5 h-full space-y-2  m-8 p-4 border-2 
+      <div className="flex justify-center w-2/4 h-full space-y-2  m-8 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
         <form>

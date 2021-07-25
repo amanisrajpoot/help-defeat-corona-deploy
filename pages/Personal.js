@@ -15,7 +15,7 @@ export default function Personal() {
     <div className="flex">
       <Sidebar />
 
-      <div className="flex flex-col w-2/4 h-full space-y-2  m-8 p-4 border-2 
+      <div className="flex flex-col w-2/4 h-full space-y-2  m-6 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>

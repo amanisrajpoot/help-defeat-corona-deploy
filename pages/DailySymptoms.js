@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/dist/client/link';
 import Sidebar from './components/Sidebar';
+import Symptom from './components/Symptom';
 
 export default function DailySymptoms () {
   const [active, setActive] = useState(false);
@@ -13,7 +14,7 @@ export default function DailySymptoms () {
     <div className="flex">
       <Sidebar />
       
-      <div className="flex flex-col items-center w-2/4 h-full space-y-2 m-8 p-4 border-2 
+      <div className="flex flex-col items-center w-2/4 h-full space-y-2 m-6 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>
@@ -23,15 +24,15 @@ export default function DailySymptoms () {
 
           
           <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4 l-0 ">Fever</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Headache</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> CHILLS OR SWEATING</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Vomiting</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> DIFFICULTY BREATHING</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Diarrhea</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SORE THROAT</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Fatique/Tiredness</button>
-            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Body Aches</button>
+            <Symptom symptom="Fever"/>
+            <Symptom symptom="Headache" />
+            <Symptom symptom="CHILLS OR SWEATING" />
+            <Symptom symptom="Vomiting" />
+            <Symptom symptom="DIFFICULTY BREATHING" />
+            <Symptom symptom="Diarrhea" />
+            <Symptom symptom="SORE THROAT" />
+            <Symptom symptom="Fatique/Tiredness" />
+            <Symptom symptom="Body Aches</button" />
           </div>
 
         </div> 
