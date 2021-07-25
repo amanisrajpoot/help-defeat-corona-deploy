@@ -19,14 +19,14 @@ export default function Navbar() {
             <div className="hover:text-purple-500 hover:border-b-2 border-purple-500"><Link className="" href="/">
               <a>Account Details</a></Link></div>
             <div className="hover:text-purple-500 hover:border-b-2 border-purple-500">
-                <Link className="pl-2 ml-4" href="/">
+                <Link className="pl-2 ml-4" href="/DailySymptoms">
               <a>Symptoms</a></Link></div>
             <div className="hover:text-purple-500 hover:border-b-2 border-purple-500">
-              <Link className="pl-2 ml-4" href="/">
+              <Link className="pl-2 ml-4" href="/MedicalHistory">
               <a>Medical History</a></Link> </div>
             <div className="hover:text-purple-500 hover:border-b-2 border-purple-500">
-              <Link className="pl-2 ml-4" href="/">
-              <a>Symptoms</a></Link></div>
+              <Link className="pl-2 ml-4" href="/Allergies">
+              <a>Allergies</a></Link></div>
         
           </div>
           <div className="p-4 flex justify-end 
