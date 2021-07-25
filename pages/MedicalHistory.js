@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { Questions } from './components/Questions';
 
 export default function MedicalHistory () {
   const [active, setActive] = useState(false);

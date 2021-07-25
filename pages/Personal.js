@@ -38,7 +38,7 @@ export default function Personal() {
         <div>
           <Link href="/">
             <a >
-            <button class="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next -></button>
+            <button class="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
             </a>
           </Link>
         </div>

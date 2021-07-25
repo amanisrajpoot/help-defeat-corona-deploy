@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { SelfTest } from './components/SelfTest'
 import { Sidebar } from './components/Sidebar'
 import Details from './Details'
 
