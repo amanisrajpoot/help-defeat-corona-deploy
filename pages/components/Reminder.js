@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-export const Reminder = () => {
+export default function Reminder()  {
   const [active, setActive] = useState(false);
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");

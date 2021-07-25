@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/dist/client/link';
-import { Sidebar } from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 
 export default function DailySymptoms () {
   const [active, setActive] = useState(false);

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { Questions } from './components/Questions';
-import {Sidebar} from './components/Sidebar'
+import Questions from './components/Questions';
+import Sidebar from './components/Sidebar'
 
 export default function Personal() {
   const [active, setActive] = useState(false);

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const Questions = ({question}) => {
+export default function Questions({question})  {
   const [active, setActive] = useState(false);
   const [btnYes, setYes] = useState("hover:bg-red-500 bg-white");
   const [btnNo, setNo] = useState("hover:bg-white bg-green-200");

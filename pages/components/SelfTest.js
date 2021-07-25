@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Sidebar } from './Sidebar';
-import { Questions } from './Questions';
+import Questions from './Questions';
 
 
-export const SelfTest = () => {
+export default function SelfTest()  {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {

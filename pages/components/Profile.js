@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { Options } from './Options';
+import Options from './Options';
 
-export const Profile = () => {
+export default function Profile() {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {

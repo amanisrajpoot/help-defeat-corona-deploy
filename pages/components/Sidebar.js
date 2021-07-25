@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import {Profile} from './Profile';
-import { Reminder } from './Reminder';
+import Profile from './Profile';
+import Reminder from './Reminder';
 
-export const Sidebar = () => {
+export default function Sidebar()  {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {

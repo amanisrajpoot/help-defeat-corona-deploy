@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export const Options = ({opt, optSub}) => {
+export default function Options({opt, optSub}) {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {

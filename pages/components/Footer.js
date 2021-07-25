@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export const Footer = () => {
+export default function Footer() {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
