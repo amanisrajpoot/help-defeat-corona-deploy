@@ -20,33 +20,33 @@ export default function Allergies () {
         </a>
       </Link>
 
-      <div className="flex justify-center w-2/5 m-8 p-4 border-2 
+      <div className="flex items-center w-2/5 m-4 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>
-          <div class="w-full">
-            <div class="w-full text-4xl font-bold my-2 py-2 p-2" >Allergies</div>
-            <div class="w-full text-sm my-2 p-2" >You would be surpised how much this information helps</div>
+          <div class="ml-6 w-full">
+            <div class="w-full text-4xl font-bold my-2 py-2 p-2 uppercase" >Allergies</div>
+            <div class="w-full text-sm my-2 p-2" >You would be surprised how much this information helps.</div>
           </div>
 
           
-          <div class="flex text-sm rounded-lg flex-wrap ">
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4 l-0 "> Male</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Female</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
-            <button class="w-1/3 bg-gray-200 rounded-xl p-4 m-4"> Prefer Not to Say</button>
+          <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4 l-0 ">Heart Disease</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> High Blood Pressure</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Lung Disease</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> Diabetes</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> NEUROLOGICAL DISEASE</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> KIDNEY/LIVER FAILURE</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> CANCER</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> WEAKENED IMMUNITY DUE TO DISEASE (HIV)</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SMOKER</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> PREGNANT</button>
+            <button class="w-2/5 bg-gray-200 rounded-xl p-4 m-4"> SEVERE OBESITY </button>
           </div>
 
-          <div class="flex flex-wrap pt-2 items-center">
-            <div class="w-full text-sm my-2 p-2" >ADD ADDITIONAL ALLERGIES</div>
-            <input class="w-full h-1/4 shadow-md border-gray-200 border-2 my-2 p-2 ml-4 placeholder-text-xs" 
-            type="text" placeholder="List them here and click enter - they should show up above" />
+          <div class="flex flex-wrap items-center ml-4 text-sm w-full">
+            <button class="w-full bg-gray-200 rounded-xl p-4 m-4 mr-10">
+            NONE OF THE ABOVE</button>
           </div>
 
         </div> 
