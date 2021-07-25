@@ -16,7 +16,8 @@ export default function Navbar() {
         </div>
         <div className="p-2 flex justify-center space-x-8 uppercase">
           <div className="p-4 flex justify-center space-x-8">
-            <div className="hover:text-purple-500 hover:border-b-2 border-purple-500"><Link className="" href="/">
+            <div className="hover:text-purple-500 hover:border-b-2 border-purple-500">
+              <Link className="" href="/AccountDetails">
               <a>Account Details</a></Link></div>
             <div className="hover:text-purple-500 hover:border-b-2 border-purple-500">
                 <Link className="pl-2 ml-4" href="/DailySymptoms">

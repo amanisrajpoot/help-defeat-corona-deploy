@@ -23,7 +23,7 @@ export default function Profile() {
           <Options opt="Daily Symptoms" 
             optSub="Enter any recent medical complication like uneasy breathing."/>
 
-          <div className="border-b-2"><Link href="/"><a className="text-red-500">Personal</a></Link>
+          <div className="border-b-2"><Link href="/Personal"><a className="text-red-500">Personal</a></Link>
             <p className="text-xs justify-center">Change any Personal Information</p>
             </div>
 
