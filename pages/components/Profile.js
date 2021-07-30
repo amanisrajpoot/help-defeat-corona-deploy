@@ -34,8 +34,11 @@ export default function Profile({handleProf, handleHow, handleSymps, handleVital
             handleActive={handleVital} 
             active={vitalActive}/>
 
-          <Options opt="Test Results" optSub="" link={"/TestResults"}
-          handleActive={handleTest} active={testActive}/>
+          <Options opt="Test Results" 
+            optSub="" 
+            link={"/TestResults"}
+            handleActive={handleTest} 
+            active={testActive}/>
 
         </div>
     </>

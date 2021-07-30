@@ -18,12 +18,12 @@ export default function DailySymptoms () {
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>
-          <div class="ml-6 w-full">
-            <div class="w-full text-4xl font-bold my-2 py-2 p-2" >DO YOU HAVE ANY OF THESE SYMPTOMS (Y/N)</div>
+          <div className="ml-6 w-full">
+            <div className="w-full text-4xl font-bold my-2 py-2 p-2" >DO YOU HAVE ANY OF THESE SYMPTOMS (Y/N)</div>
           </div>
 
           
-          <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
+          <div className="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
             <Symptom symptom="Fever"/>
             <Symptom symptom="Headache" />
             <Symptom symptom="CHILLS OR SWEATING" />
@@ -40,7 +40,7 @@ export default function DailySymptoms () {
         <div>
           <Link href="/VitalSigns">
             <a >
-            <button class="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
+            <button className="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
             </a>
           </Link>
         </div>

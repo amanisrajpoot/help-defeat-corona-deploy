@@ -18,7 +18,7 @@ export default function MedicalHistory () {
       
       <Link href="/Allergies">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
         </a>
       </Link>
       
@@ -27,9 +27,9 @@ export default function MedicalHistory () {
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>
-          <div class="ml-6 w-full">
-            <div class="w-full text-4xl font-bold my-2 py-2 p-2" >MEDICAL HISTORY</div>
-            <div class="w-full text-sm my-2 p-2" >Click the boxes for any of the items that apply for you</div>
+          <div className="ml-6 w-full">
+            <div className="w-full text-4xl font-bold my-2 py-2 p-2" >MEDICAL HISTORY</div>
+            <div className="w-full text-sm my-2 p-2" >Click the boxes for any of the items that apply for you</div>
           </div>
 
           
@@ -47,7 +47,7 @@ export default function MedicalHistory () {
             <History history="SEVERE OBESITY"/>
           </div>
 
-          <div class="flex flex-wrap items-center ml-4 text-sm w-full">
+          <div className="flex flex-wrap items-center ml-4 text-sm w-full">
             <HistoryNone historyNone="NONE OF THE ABOVE" />
           </div>
 
@@ -57,7 +57,7 @@ export default function MedicalHistory () {
       
       <Link href="/DailySymptoms">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
         </a>
       </Link>
 

@@ -18,7 +18,7 @@ export default function Allergies () {
       
       <Link href="/AccountDetails">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
         </a>
       </Link>
 
@@ -26,9 +26,9 @@ export default function Allergies () {
          text-xl shadow bg-white rounded-lg h-18">
         
         <div>
-          <div class="ml-6 w-full">
-            <div class="w-full text-4xl font-bold my-2 py-2 p-2 uppercase" >Allergies</div>
-            <div class="w-full text-sm my-2 p-2" >You would be surprised how much this information helps.</div>
+          <div className="ml-6 w-full">
+            <div className="w-full text-4xl font-bold my-2 py-2 p-2 uppercase" >Allergies</div>
+            <div className="w-full text-sm my-2 p-2" >You would be surprised how much this information helps.</div>
           </div>
 
           
@@ -46,7 +46,7 @@ export default function Allergies () {
             <Allergy allergy="SEVERE OBESITY"/>
           </div>
 
-          <div class="flex flex-wrap items-center ml-4 text-sm w-full">
+          <div className="flex flex-wrap items-center ml-4 text-sm w-full">
             <AllergyNone allergyNone="NONE OF THE ABOVE" />
           </div>
 
@@ -56,7 +56,7 @@ export default function Allergies () {
 
       <Link href="/MedicalHistory">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
         </a>
       </Link>
 
@@ -66,12 +66,12 @@ export default function Allergies () {
       
       <Link href="/AccountDetails">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
         </a>
       </Link>
       <Link href="/MedicalHistory">
         <a>
-          <button class="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
         </a>
       </Link>
 

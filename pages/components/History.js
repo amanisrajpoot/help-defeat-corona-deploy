@@ -15,7 +15,7 @@ export default function History({history})  {
 
   return (
     <>
-        <button class={"w-2/5 rounded-xl p-4 m-4 l-0 " + btn} 
+        <button className={"w-2/5 rounded-xl p-4 m-4 l-0 " + btn} 
         onClick={handleClick}>{history}</button>
 
     </>

@@ -15,7 +15,7 @@ export default function HistoryNone({historyNone})  {
 
   return (
     <>
-        <button class={"w-full rounded-xl p-4 m-4 mr-10 " + btn} 
+        <button className={"w-full rounded-xl p-4 m-4 mr-10 " + btn} 
         onClick={handleClick}>{historyNone}</button>
 
     </>

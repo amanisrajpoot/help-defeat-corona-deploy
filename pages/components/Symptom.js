@@ -15,7 +15,7 @@ export default function Symptom({symptom})  {
 
   return (
     <>
-        <button class={"w-2/5 bg-gray-200 rounded-xl p-4 m-4 " + btn} 
+        <button className={"w-2/5 bg-gray-200 rounded-xl p-4 m-4 " + btn} 
         onClick={handleClick}>{symptom}</button>
 
     </>

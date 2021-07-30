@@ -33,14 +33,14 @@ export default function Personal() {
       <div className="flex flex-col items-center w-2/4 h-full space-y-2  m-6 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
-        <div class="w-full">
-          <div class="flex fles-start w-full shadow-sm">
-            <div class="w-3/4 text-xl font-bold my-2 py-2 p-2" >Personal</div>
-            <div class="text-xl font-bold my-2 py-2 p-2" >{month} {day}</div>
+        <div className="w-full">
+          <div className="flex fles-start w-full shadow-sm">
+            <div className="w-3/4 text-xl font-bold my-2 py-2 p-2" >Personal</div>
+            <div className="text-xl font-bold my-2 py-2 p-2" >{month} {day}</div>
           </div>
 
           
-          <div class="flex fles-start flex-col justify-center text-sm uppercase rounded-lg ml-4 w-full">
+          <div className="flex fles-start flex-col justify-center text-sm uppercase rounded-lg ml-4 w-full">
             
             
             <Questions handleClick = {handleClick} question="WERE YOU EXPOSED TO ANYONE WHO HAS COVID-19?"/>
@@ -52,7 +52,7 @@ export default function Personal() {
         <div>
           <Link href="/DailySymptoms">
             <a >
-            <button class="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
+            <button className="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
             </a>
           </Link>
         </div>
