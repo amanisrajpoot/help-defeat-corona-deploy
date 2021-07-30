@@ -1,19 +1,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export default function Options({opt, optSub}) {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
+export default function Options({opt, optSub, link, handleActive, active}) {
 
   return (
-    <>
-        <div><Link className="pl-2 ml-4" href="/"><a>{opt}</a></Link>
+        <div className={opt === "Test Results"? "uppercase pt-2 text-2xl":"border-b-2 "}><Link href={link}>
+            <a onClick={handleActive} className={active?"text-red-500": "text-gray-500"}>{opt}</a></Link>
             <p className="text-xs justify-center">{optSub}</p>
-            </div> 
-    </>
+            </div>
   );
 };
 

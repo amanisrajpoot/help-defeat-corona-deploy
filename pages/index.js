@@ -1,8 +1,25 @@
 import Head from 'next/head'
 import Sidebar from './components/Sidebar'
 import Details from './Details'
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+
+  const [day, setDay] = useState("");
+  const [month, setMonth] = useState("");
+
+  const today = new Date();
+  
+  const months = today.getMonth();
+  const monthsStr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const days =  today.getDate();
+
+  useEffect(() => {
+    setDay(days);
+    setMonth(monthsStr[months]);
+    console.log(month)
+  }, [])
+
   return (
     <div className="font:roboto">
       <Head>
@@ -11,7 +28,7 @@ export default function Home() {
       </Head>
       <div className="flex">
         <Sidebar></Sidebar>
-        <Details></Details>
+        <Details month={month} day={day}></Details>
       </div>
       
     </div>

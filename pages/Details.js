@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Questions from './components/Questions';
 
-export default function Details () {
+export default function Details ({month, day}) {
   const [active, setActive] = useState(false);
-
+  
   const handleClick = () => {
     setActive(!active);
   };
@@ -15,29 +15,29 @@ export default function Details () {
         
         <div>
           <div class="flex fles-starT shadow-sm ml-6">
-            <div class=" text-xl font-bold my-2 py-2 p-2" >Personal Details</div>
+            <div class=" text-xl font-bold my-2 py-2 p-2" >{month} {day}</div>
           </div>
 
           
-          <div class="flex fles-start flex-col text-sm uppercase rounded-lg m-4 p-4">
+          <div class="flex flex-col uppercase rounded-lg m-4 p-4">
             
-            <div class="w-full shadow-md my-2 py-2 p-2">Full Name</div>
-            <div class="w-full shadow-md my-2 py-2 p-2">Email</div>
-            <div class="w-full shadow-md my-2 py-2 p-2">Phone Number</div>
-            <div class="w-full shadow-md my-2 py-2 p-2">Location</div>
-            <div class="w-full shadow-md my-2 py-2 p-2">Health Status</div>
+            <div class="flex w-full my-2 py-2 p-2">
+                <div class="w-full text-3xl tracking-loose m-2 p-2 text-purple-500">
+                  Please enter your vitals and other details to view the prediction.</div>
+                <div class="w-full shadow-md my-2 py-2 p-2">Photo</div>
+            </div>
+            
+            <div className="flex justify-center">
+              <Link href="/Personal">
+                <button class="w-2/6 shadow-md bg-purple-500 
+                text-white text-3xl m-4 p-4 rounded-full">Let's Go! 
+                </button>
+              </Link>
+            </div>
 
           </div>
 
         </div> 
-          
-        <div>
-          <Link href="/AccountDetails">
-            <a >
-            <button class="border-1 p-4 m-4 ml-8 text-2xl shadow-md rounded-xl p-2">Next</button>
-            </a>
-          </Link>
-        </div>
 
       </div>
         
