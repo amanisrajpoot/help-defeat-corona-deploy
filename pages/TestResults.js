@@ -80,7 +80,7 @@ export default function Personal() {
         </div> 
           
         <div>
-          <Link href="/DailySymptoms">
+          <Link href="/">
             <a >
             <button className="border-1 p-4 m-4 text-2xl shadow-md rounded-xl p-2">Next</button>
             </a>
