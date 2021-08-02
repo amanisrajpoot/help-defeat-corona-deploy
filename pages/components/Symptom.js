@@ -15,7 +15,7 @@ export default function Symptom({symptom})  {
 
   return (
     <>
-        <button className={"w-2/5 bg-gray-200 rounded-xl p-4 m-4 " + btn} 
+        <button className={symptom === "None of the Above"? "w-full bg-gray-200 rounded-xl p-4 m-4 mr-16 " + btn :"w-2/5 bg-gray-200 rounded-xl p-4 m-4 " + btn} 
         onClick={handleClick}>{symptom}</button>
 
     </>

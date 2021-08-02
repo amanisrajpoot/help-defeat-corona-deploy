@@ -26,7 +26,7 @@ export default function Home() {
         <title>HelpDefeatCorona.org</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className="flex">
+      <div className="flex pl-24">
         <Sidebar></Sidebar>
         <Details month={month} day={day}></Details>
       </div>

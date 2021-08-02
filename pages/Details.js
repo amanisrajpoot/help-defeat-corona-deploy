@@ -11,7 +11,7 @@ export default function Details ({month, day}) {
 
   return (
     <div className="flex flex-col w-2/4 h-full space-y-2  m-6 p-4 border-2 
-         text-xl shadow bg-white rounded-lg h-18">
+         text-xl bg-white h-18">
         
         <div>
           <div className="flex fles-starT shadow-sm ml-6">

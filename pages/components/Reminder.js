@@ -27,7 +27,7 @@ export default function Reminder()  {
 
   return (
     <>
-        <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 shadow bg-white rounded-lg h-18 text-xl">
+        <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 bg-white h-18 text-xl">
           <div className="flex space-x-4 items-center shadow-md bg-white rounded-lg">
           <div className="flex-col text-purple-500">
             <p className="text-xl">{day + 1}</p>

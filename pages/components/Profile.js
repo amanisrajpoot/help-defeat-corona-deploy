@@ -8,9 +8,9 @@ export default function Profile({handleProf, handleHow, handleSymps, handleVital
   return (
     <>
         <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 
-         text-xl shadow bg-white rounded-lg h-18">
+         text-xl bg-white h-18">
 
-          <Options opt="Account Details" 
+          <Options opt="Profile" 
             optSub="50% Complete" 
             link={"/"} 
             handleActive={handleProf} 
