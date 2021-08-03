@@ -19,7 +19,7 @@ export default function DailySymptoms () {
         
         <div>
           <div className="ml-6 w-full">
-            <div className="w-full text-3xl my-2 py-2 p-2 text-gray-500" >DO YOU HAVE ANY OF THESE SYMPTOMS? (Y/N)</div>
+            <div className="w-full text-2xl my-2 py-2 p-2 text-gray-500" >DO YOU HAVE ANY OF THESE SYMPTOMS? (Y/N)</div>
             <div className="w-full text-xl my-2 p-2" >Click the boxes that apply to you</div>
             <div className="w-full text-sm my-2 p-2 text-red-500" >Severe symptoms</div>
           </div>
@@ -63,7 +63,7 @@ export default function DailySymptoms () {
             <div>
               <div className="w-full text-sm my-2 mx-4 p-4 text-gray-700" >
                 Please search for your symptoms below if not listed above</div>
-              <input className="w-full text-sm my-2 mx-4 p-4 text-gray-700" 
+              <input className="w-full text-sm my-2 mx-4 p-4 text-gray-700 border-2" 
                 type="text" placeholder="Search Other Symptoms"> 
               </input>
             </div>

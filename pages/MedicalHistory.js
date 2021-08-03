@@ -16,13 +16,6 @@ export default function MedicalHistory () {
     <>
     <div className="flex justify-center items-center space-x-32 w-full">
       
-      <Link href="/Allergies">
-        <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Previous</button>
-        </a>
-      </Link>
-      
-      
       <div className="flex items-center w-2/4 m-4 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
@@ -54,10 +47,14 @@ export default function MedicalHistory () {
         </div> 
         
       </div>
+
+    </div>
+
+    <div className="flex justify-center items-center space-x-32">
       
-      <Link href="/DailySymptoms">
+      <Link href="/Settings">
         <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Next</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Done</button>
         </a>
       </Link>
 

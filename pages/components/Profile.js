@@ -7,7 +7,7 @@ export default function Profile({handleProf, handleHow, handleSymps, handleVital
 
   return (
     <>
-        <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 
+        <div className="flex-row space-y-2 h-auto m-8 p-8 border-2 
          text-xl bg-white h-18">
 
           <Options opt="Profile" 

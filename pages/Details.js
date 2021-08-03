@@ -22,7 +22,7 @@ export default function Details ({month, day}) {
           <div className="flex flex-col uppercase rounded-lg m-4 p-4">
             
             <div className="flex w-full my-2 py-2 p-2">
-                <div className="w-full text-3xl tracking-loose m-2 p-2 text-purple-500">
+                <div className="w-full text-2xl tracking-loose m-2 p-2 text-purple-500">
                   Please enter your vitals and other details to view the prediction.</div>
                 <div className="w-full shadow-md my-2 py-2 p-2">Photo</div>
             </div>

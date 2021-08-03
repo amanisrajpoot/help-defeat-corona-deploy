@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function AccountDetails () {
+export default function Settings () {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -41,9 +41,9 @@ export default function AccountDetails () {
         </form> 
         
       </div>
-      <Link href="/Settings">
+      <Link href="/Allergies">
         <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2">Done</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2">Next</button>
         </a>
       </Link>
     </div>

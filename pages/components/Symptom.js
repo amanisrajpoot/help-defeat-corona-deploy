@@ -6,7 +6,7 @@ export default function Symptom({symptom})  {
 
   const handleClick = () => {
     if(btn === "hover:bg-blue-500 bg-gray-200"){
-      setBtn("hover:bg-red-500 bg-red-500")
+      setBtn("hover:bg-purple-500 bg-purple-500")
     }else{
       setBtn("hover:bg-blue-500 bg-gray-200")
     }

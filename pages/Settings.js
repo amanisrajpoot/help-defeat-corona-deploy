@@ -11,39 +11,73 @@ export default function Settings () {
   return (
     <div className="flex flex-col items-center">
 
-      <div className="flex justify-center w-2/4 h-full space-y-2  m-8 p-4 border-2 
+      <div className="flex w-3/5 h-full space-y-2  m-8 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
-        <form>
-          <div className="w-full space-y-4">
-            <input className="w-full shadow-md border-gray-200 border-2 my-2 py-2 p-2" placeholder="First Name" />
-            <input className="w-full shadow-md border-gray-200 border-2 my-2 py-2 p-2" type="text" placeholder="Last Name" />
-            <input className="w-full shadow-md border-gray-200 border-2 my-2 py-2 p-2" type="email" placeholder="Email" />
-            <input className="w-full shadow-md border-gray-200 border-2 my-2 py-2 p-2" type="password" placeholder="Password" />
+        <div className="space-y-8">
+          <div className="w-full border-b-2 m-2 p-2 pl-16">
+            <div>YOUR PROFILE</div>
           </div>
 
-          <div className="flex flex-wrap pt-6 pl-2 space-x-8">
-            <label className="w-1/3" name="Age">Age</label>
-            <label className="w-1/3" name="ZipCode">Zip Code</label>
-          </div>
-          <div className="flex flex-wrap pt-2 space-x-8 items-center">
-            <input className="w-1/3 shadow-md border-gray-200 border-2 my-2 py-2 p-2" type="number" name="Age" placeholder="Age" />
-            <input className="w-1/3 shadow-md border-gray-200 border-2 my-2 py-2 p-2" type="text" placeholder="ZipCode" />
+          <div>
+          <div className="flex items-center pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+            <div>Personal Details</div>
+            <Link href="AccountDetails">
+              <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  
+            </Link>
+          </div> 
+
+           <div className="p-2 space-y-2 pl-16">
+              <div>Mayank Dubey </div>
+              <div>Email: dmayank0@gmail.com</div>
+              <div className="flex space-x-8">
+                <div>DOB: 2017-08-29</div>
+                <div>Location: 110016</div>
+              </div>
+              <div>Gender:Male</div>
+              <div>Race:</div>
+              <div>Ethnicity:</div>
+            </div>
           </div>
 
-          <div className="w-full pt-6"><label  name="Gender">Gender</label></div>
-          <div className="flex text-sm m-2 rounded-lg pt-2 space-x-4 justify-start">
-            <button className="w-1/4 bg-gray-200 rounded-xl p-2 m l-0"> Male</button>
-            <button className="w-1/4 bg-gray-200 rounded-xl p-2"> Female</button>
-            <button className="w-1.5/4 bg-gray-200 rounded-xl p-2"> Prefer Not to Say</button>
+          <div>
+          <div className="flex items-center flex-wrap pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+            <div>Allergies</div>
+            <Link href="/Allergies">
+              <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  
+            </Link>
+          </div> 
+
+           <div className="p-2 space-y-2 pl-16">
+              <div>CANCER </div>
+              <div>SMOKER</div>
+              
+            </div>
           </div>
+
+          <div>
+          <div className="flex items-center pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+            <div>Medical History</div>
+            <Link href="/MedicalHistory">
+              <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  
+            </Link>
+          </div> 
+
+           <div className="p-2 space-y-2 pl-16">
+              <div>HEART DISEASE </div>
+              <div>KIDNEY/LIVER FAILURE</div>
+              
+            </div>
+          </div>
+
+          
         
-        </form> 
+        </div> 
         
       </div>
-      <Link href="/Allergies">
+      <Link href="/">
         <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2">Next</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2">Done</button>
         </a>
       </Link>
     </div>
