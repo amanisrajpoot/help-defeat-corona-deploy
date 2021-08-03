@@ -54,7 +54,7 @@ export default function Personal() {
               <h3>Test Time</h3>
               <div class="flex">
                 <input class="shadow-lg py-2 my-2  bg-green-100 uppercase" 
-                  type="time" name="temperature"></input>
+                  type="time" name="temperature" value="13:00" step="900"></input>
               </div>
               </div>
 

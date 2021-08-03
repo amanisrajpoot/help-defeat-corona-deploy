@@ -11,7 +11,7 @@ export default function Settings () {
   return (
     <div className="flex flex-col items-center">
 
-      <div className="flex w-3/5 h-full space-y-2  m-8 p-4 border-2 
+      <div className="flex w-3/5 h-full space-y-2 m-8 p-4 border-2 
          text-xl shadow bg-white rounded-lg h-18">
         
         <div className="space-y-8">
