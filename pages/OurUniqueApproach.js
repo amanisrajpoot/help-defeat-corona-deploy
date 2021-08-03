@@ -30,7 +30,7 @@ export default function OurUniqueApproach() {
     <div className="flex flex-col items-center">
 
       <div className="flex flex-col w-3/5 h-full space-y-2  m-6 p-4 border-2 
-         text-xl shadow bg-white rounded-lg h-18">
+         text-xl bg-white h-18">
         
         <div className="">
           <div className="shadow-sm">
@@ -56,7 +56,7 @@ export default function OurUniqueApproach() {
       </div>
 
       <div className="flex flex-col w-3/5 h-full space-y-2  m-6 p-4 border-2 
-         text-xl shadow bg-white rounded-lg h-18">
+         text-xl bg-white h-18">
         
         <div className="">
           <div className="shadow-sm">

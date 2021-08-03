@@ -12,7 +12,7 @@ export default function Settings () {
     <div className="flex flex-col items-center">
 
       <div className="flex w-3/5 h-full space-y-2 m-8 p-4 border-2 
-         text-xl shadow bg-white rounded-lg h-18">
+         text-xl bg-white h-18">
         
         <div className="space-y-8">
           <div className="w-full border-b-2 m-2 p-2 pl-16">
