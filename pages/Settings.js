@@ -3,6 +3,38 @@ import { useState } from 'react';
 
 export default function Settings () {
   const [active, setActive] = useState(false);
+      const [personal, setPersonal] = useState({name: 'Mayank Dubey', 
+                                                email: 'dmayank0@gmail.com', 
+                                                password: '', 
+                                                dob:'2017-08-29', 
+                                                location: '110016', 
+                                                gender:'Male', 
+                                                race:'', 
+                                                ethnicity:''});
+  const [allergies, setAllergies] = useState({  "Heart Disease":false,
+                                                "High Blood Pressure":false,
+                                                "Lung Disease":false,
+                                                "Diabetes":false,
+                                                "NEUROLOGICAL DISEASE":true,
+                                                "KIDNEY/LIVER FAILURE":false, 
+                                                "CANCER":false,
+                                                "WEAKENED IMMUNITY DUE TO DISEASE (HIV)":false,
+                                                "SMOKER":false,
+                                                "PREGNANT":false,
+                                                "SEVERE OBESITY":false
+                                              });
+      const [medical, setMedical] = useState({  "Heart Disease":false,
+                                                "High Blood Pressure":false,
+                                                "Lung Disease":false,
+                                                "Diabetes":false,
+                                                "NEUROLOGICAL DISEASE":false,
+                                                "KIDNEY/LIVER FAILURE":false, 
+                                                "CANCER":false, 
+                                                "WEAKENED IMMUNITY DUE TO DISEASE (HIV)":false,
+                                                "SMOKER":false, 
+                                                "PREGNANT":false,
+                                                "SEVERE OBESITY":false
+                                              });
 
   const handleClick = () => {
     setActive(!active);
@@ -20,7 +52,7 @@ export default function Settings () {
           </div>
 
           <div>
-          <div className="flex items-center pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+          <div className="flex items-center pt-6 pl-16 space-x-4 text-3xl text-purple-500">
             <div>Personal Details</div>
             <Link href="AccountDetails">
               <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  
@@ -28,20 +60,20 @@ export default function Settings () {
           </div> 
 
            <div className="p-2 space-y-2 pl-16">
-              <div>Mayank Dubey </div>
-              <div>Email: dmayank0@gmail.com</div>
+              <div> {personal.name}</div>
+              <div>Email: {personal.email}</div>
               <div className="flex space-x-8">
-                <div>DOB: 2017-08-29</div>
-                <div>Location: 110016</div>
+                <div>DOB: {personal.dob}</div>
+                <div>Location: {personal.location}</div>
               </div>
-              <div>Gender:Male</div>
-              <div>Race:</div>
-              <div>Ethnicity:</div>
+              <div>Gender: {personal.gender}</div>
+              <div>Race: {personal.race}</div>
+              <div>Ethnicity: {personal.ethncity}</div>
             </div>
           </div>
 
           <div>
-          <div className="flex items-center flex-wrap pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+          <div className="flex items-center flex-wrap pt-6 pl-16 space-x-4 text-3xl text-purple-500">
             <div>Allergies</div>
             <Link href="/Allergies">
               <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  
@@ -49,6 +81,7 @@ export default function Settings () {
           </div> 
 
            <div className="p-2 space-y-2 pl-16">
+              {/*allergies.map(allergy=>(allergy===true? <div>{allergy}</div>:""))*/}
               <div>CANCER </div>
               <div>SMOKER</div>
               
@@ -56,7 +89,7 @@ export default function Settings () {
           </div>
 
           <div>
-          <div className="flex items-center pt-6 pl-16 space-x-8 text-3xl text-purple-500">
+          <div className="flex items-center pt-6 pl-16 space-x-4 text-3xl text-purple-500">
             <div>Medical History</div>
             <Link href="/MedicalHistory">
               <a class="text-sm text-gray-700 hover:text-purple-500">Edit</a>  

@@ -45,19 +45,19 @@ export default function Personal() {
             
             <div className=" mt-4">
               <h3>TEMPERATURE:</h3>
-              <input className="shadow-lg py-2 my-2 w-1/4 bg-green-100" 
-                type="number" value={""} name="temperature"></input>
+              <input className="shadow-lg py-2 my-2 w-1/4 bg-purple-200" 
+                type="number" name="temperature"></input>
               <select className="ml-4 border-2 py-2 my-2" > 
-                  <option value="⬇️ Select a fruit ⬇️"> Celcius </option>
-                  <option value="⬇️ Select a fruit ⬇️"> Fahrenhiet </option>
+                  <option value="Celsius"> Celsius </option>
+                  <option value="Fahrenheit"> Fahrenheit </option>
                 </select>
               </div>
 
             <div className="mt-4">
               <h3>Heart Rate:</h3>
               <div className="flex">
-                <input className="shadow-lg py-2 my-2 w-1/4 bg-green-100" 
-                  type="number" value={""} name="temperature"></input>
+                <input className="shadow-lg py-2 my-2 w-1/4 bg-purple-200" 
+                  type="number" name="temperature"></input>
                 <p className="ml-4 py-2 my-2">BMP</p>
               </div>
               </div>
@@ -65,8 +65,8 @@ export default function Personal() {
             <div className="mt-4">
               <h3>OXYGEN SATURATION:</h3>
               <div className="flex">
-                <input className="shadow-lg py-2 my-2 w-1/4 bg-green-100" 
-                  type="number" value={""} name="temperature"></input>
+                <input className="shadow-lg py-2 my-2 w-1/4 bg-purple-200" 
+                  type="number" name="temperature"></input>
                 <p className="ml-4 py-2 my-2">%</p>
               </div>
               </div>
@@ -74,8 +74,8 @@ export default function Personal() {
             <div className="mt-4">
               <h3>DEVICE USED:</h3>
               <div className="flex">
-                <input className="shadow-lg py-2 my-2 w-3/4 bg-green-100" 
-                  type="text" value={""} name="temperature"></input>
+                <input className="shadow-lg py-2 my-2 w-3/4 bg-purple-200" 
+                  type="text" name="temperature"></input>
               </div>
               </div>
             

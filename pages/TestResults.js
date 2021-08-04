@@ -53,22 +53,22 @@ export default function Personal() {
             <div class="pl-4 ml-4 mt-8">
               <h3>Test Time</h3>
               <div class="flex">
-                <input class="shadow-lg py-2 my-2  bg-green-100 uppercase" 
-                  type="time" name="temperature" value="13:00" step="900"></input>
+                <input class="shadow-lg py-2 my-2 bg-purple-200 uppercase" 
+                  type="time" name="temperature"></input>
               </div>
               </div>
 
             <div class="pl-4 ml-4 mt-8">
               <h3>TEST TYPE</h3>
               <div class="flex">
-                <input class="shadow-lg py-2 my-2 w-3/4 bg-green-100" 
+                <input class="shadow-lg py-2 my-2 w-3/4 bg-purple-200" 
                   type="text" placeholder="Type of test you underwent" name="temperature"></input>
                 </div>
               </div>
 
             <div class="pl-4 ml-4 mt-8">
               <h3>TEMPERATURE:</h3>
-              <select class="shadow-lg py-2 my-2 w-3/4 bg-green-100" > 
+              <select class="shadow-lg py-2 my-2 w-3/4 bg-purple-200" > 
                   <option value="Waiting for Result"> Waiting for Result </option>
                   <option value="Covid-19 Positive"> Covid-19 Positive </option>
                   <option value="Covid-19 Negative"> Covid-19 Negative </option>

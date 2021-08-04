@@ -18,7 +18,7 @@ export default function Allergies () {
       
       
 
-      <div className="flex items-center w-2/4 m-4 p-4 border-2 
+      <div className="flex items-center w-3/5 m-4 p-4 border-2 
          text-xl bg-white h-18">
         
         <div>

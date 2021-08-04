@@ -2,15 +2,15 @@ import { useState } from 'react';
 
 export default function Questions({question})  {
   const [active, setActive] = useState(false);
-  const [btnYes, setYes] = useState("hover:bg-red-500 bg-white");
+  const [btnYes, setYes] = useState("hover:bg-purple-500 bg-white");
   const [btnNo, setNo] = useState("hover:bg-white bg-green-200");
 
   const handleYes = () => {
-    if(btnYes === "hover:bg-red-500 bg-white"){
-      setYes("hover:bg-white bg-red-500")
+    if(btnYes === "hover:bg-purple-500 bg-white"){
+      setYes("hover:bg-white bg-purple-500")
       setNo("hover:bg-green-500 bg-white")
     }else{
-      setYes("hover:bg-red-500 bg-white")
+      setYes("hover:bg-purple-500 bg-white")
       setNo("hover:bg-white bg-green-200")
     }
     console.log("this happened")
@@ -20,10 +20,10 @@ export default function Questions({question})  {
     setActive(!active);
     if(btnNo === "hover:bg-white bg-green-200"){
       setNo("hover:bg-white bg-green-500")
-      setYes("hover:bg-red-500 bg-white")
+      setYes("hover:bg-purple-500 bg-white")
     }else{
       setNo("hover:bg-white bg-green-200")
-      setYes("hover:bg-red-500 bg-white")
+      setYes("hover:bg-purple-500 bg-white")
     }
     console.log("this happened")
   };

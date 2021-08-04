@@ -16,10 +16,10 @@ export default function MedicalHistory () {
     <>
     <div className="flex justify-center items-center space-x-32 w-full">
       
-      <div className="flex items-center w-2/4 m-4 p-4 border-2 
+      <div className="flex items-center w-3/5 m-4 p-4 border-2 
          text-xl bg-white h-18">
         
-        <div>
+        <div className="">
           <div className="ml-6 w-full">
             <div className="w-full text-4xl font-bold my-2 py-2 p-2" >MEDICAL HISTORY</div>
             <div className="w-full text-sm my-2 p-2" >Click the boxes for any of the items that apply for you</div>
@@ -40,7 +40,7 @@ export default function MedicalHistory () {
             <History history="SEVERE OBESITY"/>
           </div>
 
-          <div className="flex flex-wrap items-center ml-4 text-sm w-full">
+          <div className="flex justify-center ml-4 text-sm w-full">
             <HistoryNone historyNone="NONE OF THE ABOVE" />
           </div>
 

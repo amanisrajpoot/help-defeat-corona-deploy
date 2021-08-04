@@ -14,7 +14,7 @@ export default function AccountDetails () {
   return (
     <div className="flex flex-col items-center font-roboto">
 
-      <div className="flex-col w-2/4 h-full space-y-2  m-8 p-4 border-2 
+      <div className="flex-col w-3/5 h-full space-y-2  m-8 p-4 border-2 
          text-xl bg-white h-18">
         
         <div className="w-full border-b-2 m-2 p-2 text-5xl text-gray-500 space-y-4 ml-8">
