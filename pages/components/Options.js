@@ -12,9 +12,9 @@ export default function Options({opt, optSub, link, /*handleActive, active*/}) {
         <div className={opt !== "Profile" ? "uppercase pt-2 text-xl w-full":"uppercase border-b-2 text-xl"}>
 
          <Link href={`${link}`}>
-            <a onClick={handleClick} className={active?"text-red-500": "text-black"}>{opt}</a>
+            <a onClick={handleClick} className={active?"text-red-500": "text-gray-900"}>{opt}</a>
             </Link>
-            <p className="text-xs justify-center capitalize">{optSub}</p>
+            <p className="text-xs justify-center capitalize text-gray-600">{optSub}</p>
         </div>
   );
 };

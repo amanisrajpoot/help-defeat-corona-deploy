@@ -23,7 +23,7 @@ export default function AccountDetails () {
           </div>
 
         <div>
-          <div className="w-full space-y-4 w-3/5 ml-8 m-2 p-2">
+          <div className=" space-y-4 w-3/5 ml-8 m-2 p-2">
             <input className="w-full my-2 py-2 p-2 h-16 bg-gray-100 rounded-lg" placeholder="First Name" />
             <input className="w-full my-2 py-2 p-2 h-16 bg-gray-100 rounded-lg" type="text" placeholder="Last Name" />
             

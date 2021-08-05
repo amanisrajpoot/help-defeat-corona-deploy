@@ -29,8 +29,8 @@ export default function Details ({month, day}) {
             
             <div className="flex justify-center">
               <Link href="/Personal">
-                <button className="w-2/6 shadow-md bg-purple-500 
-                text-white text-3xl m-4 p-4 rounded-full">Let's Go! 
+                <button className="w-2/7 shadow-md bg-purple-500 
+                text-white text-2xl m-4 p-4 rounded-full">Let's Go! 
                 </button>
               </Link>
             </div>
