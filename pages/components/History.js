@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch} from "react-redux"
-import { addMedicalHistory, removeMedicalHistory, removeAllMedicalHistory } from "../redux/reducers/MedicalHistory"
+import { addMedicalHistory, removeMedicalHistory, removeAllMedicalHistory } from "../redux/MedicalHistory"
 
 export default function History({history, present})  {
   const [active, setActive] = useState(false);

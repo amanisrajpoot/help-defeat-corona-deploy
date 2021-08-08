@@ -1,12 +1,23 @@
 import Link from 'next/link';
 import Allergy from './components/Allergy';
 import { useState } from 'react';
-import AllergyNone from './components/AllergyNone';
 import { useSelector, useDispatch} from "react-redux"
 
 
 export default function Allergies () {
   const [active, setActive] = useState(false);
+  const [allergyOptions, setAllergyOptions] = useState(["Heart Disease", 
+                                                        "High Blood Pressure", 
+                                                        "Lung Disease", "Diabetes", 
+                                                        "NEUROLOGICAL Disorder", 
+                                                        "KIDNEY/LIVER FAILURE",
+                                                        "CANCER",
+                                                        "WEAKENED IMMUNITY DUE TO DISEASE (HIV)",
+                                                        "SMOKER",
+                                                        "PREGNANT",
+                                                        "SEVERE OBESITY"
+                                                   ])
+
   
   const handleClick = () => {
     setActive(!active);
@@ -30,28 +41,9 @@ export default function Allergies () {
 
           
           <div className="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
-            <Allergy present={allergies.find(allergy=>allergy== "Heart Disease")} 
-              allergy="Heart Disease"/>
-            <Allergy present={allergies.find(allergy=>allergy== "High Blood Pressure")} 
-              allergy="High Blood Pressure"/>
-            <Allergy present={allergies.find(allergy=>allergy== "Lung Disease")}
-              allergy="Lung Disease"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "Diabetes")}
-              allergy="Diabetes"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "NEUROLOGICAL Disorder")}
-              allergy="NEUROLOGICAL Disorder"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "KIDNEY/LIVER FAILURE")}
-              allergy="KIDNEY/LIVER FAILURE"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "CANCER")}
-              allergy="CANCER"/>
-            <Allergy present={allergies.find(allergy=>allergy== "WEAKENED IMMUNITY DUE TO DISEASE (HIV)")}
-              allergy="WEAKENED IMMUNITY DUE TO DISEASE (HIV)"/>
-            <Allergy present={allergies.find(allergy=>allergy== "SMOKER")}
-              allergy="SMOKER"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "PREGNANT")}
-              allergy="PREGNANT"/> 
-            <Allergy present={allergies.find(allergy=>allergy== "SEVERE OBESITY")} 
-              allergy="SEVERE OBESITY"/>
+            {allergyOptions.map(option => <Allergy present={allergies.find(allergy=>allergy== option)} 
+              allergy={option}/> )}
+            
           </div>
 
           <div className="flex flex-wrap justify-center ml-4 text-sm w-full">

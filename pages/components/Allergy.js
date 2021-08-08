@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch} from "react-redux"
-import { addAllergy, removeAllergy, removeAllAllergies } from "../redux/reducers/Allergies"
+import { addAllergy, removeAllergy, removeAllAllergies } from "../redux/Allergies"
 
 export default function Allergy({allergy, present})  {
   const [active, setActive] = useState(false);

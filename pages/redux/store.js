@@ -1,11 +1,12 @@
 import {combineReducers, createStore, applyMiddleware} from "redux"
-import {addAllergy, removeAllergy, removeAllAllergies } from "./reducers/Allergies"
-import Allergies from "./reducers/Allergies"
-import MedicalHistory from "./reducers/MedicalHistory"
+import Allergies from "./Allergies"
+import MedicalHistory from "./MedicalHistory"
+import UserDetails from "./UserDetails"
 
 const rootReducer = combineReducers({
     Allergies,
-    MedicalHistory
+    MedicalHistory,
+    UserDetails
 })
 
 const store = createStore(rootReducer)

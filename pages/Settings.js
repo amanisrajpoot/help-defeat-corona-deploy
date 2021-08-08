@@ -4,14 +4,7 @@ import { useSelector, useDispatch} from "react-redux"
 
 export default function Settings () {
   const [active, setActive] = useState(false);
-      const [personal, setPersonal] = useState({name: 'Mayank Dubey', 
-                                                email: 'dmayank0@gmail.com', 
-                                                password: '', 
-                                                dob:'2017-08-29', 
-                                                location: '110016', 
-                                                gender:'Male', 
-                                                race:'', 
-                                                ethnicity:''});
+  const [personal, setPersonal] = useState();
 
   const handleClick = () => {
     setActive(!active);
@@ -19,6 +12,7 @@ export default function Settings () {
 
   const allergies = useSelector(state => state.Allergies);
   const medicalHistory = useSelector(state => state.MedicalHistory);
+  const userDetails = useSelector(state => state.UserDetails);
   const dispatch = useDispatch()
 
   return (
@@ -41,15 +35,15 @@ export default function Settings () {
           </div> 
 
            <div className="p-2 space-y-2 pl-16">
-              <div> {personal.name}</div>
-              <div>Email: {personal.email}</div>
+              <div> {userDetails.firstName} {userDetails.lastName}</div>
+              <div>Email: {userDetails.email}</div>
               <div className="flex space-x-8">
-                <div>DOB: {personal.dob}</div>
-                <div>Location: {personal.location}</div>
+                <div>DOB: {userDetails.dob}</div>
+                <div>Location: {userDetails.location}</div>
               </div>
-              <div>Gender: {personal.gender}</div>
-              <div>Race: {personal.race}</div>
-              <div>Ethnicity: {personal.ethncity}</div>
+              <div>Gender: {userDetails.gender}</div>
+              <div>Race: {userDetails.race}</div>
+              <div>Ethnicity: {userDetails.ethncity}</div>
             </div>
           </div>
 
@@ -63,8 +57,7 @@ export default function Settings () {
 
            <div className="p-2 space-y-2 pl-16">
               {allergies.map(allergy=> allergy !== "NONE OF THE ABOVE" && <div>{allergy}</div>)}
-              <div>CANCER </div>
-              <div>SMOKER</div>
+              <div>Sample </div>
               
             </div>
           </div>
@@ -79,8 +72,7 @@ export default function Settings () {
 
            <div className="p-2 space-y-2 pl-16">
               {medicalHistory.map(medicalHistory=> medicalHistory !== "NONE OF THE ABOVE" && <div>{medicalHistory}</div>)}
-              <div>HEART DISEASE </div>
-              <div>KIDNEY/LIVER FAILURE</div>
+              <div>Sample </div>
               
             </div>
           </div>
