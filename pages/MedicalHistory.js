@@ -59,7 +59,8 @@ export default function MedicalHistory () {
       
       <Link href="/Settings">
         <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Done</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"
+            onClick={()=>dispatch(removeMedicalHistory("NONE OF THE ABOVE"))}> Done</button>
         </a>
       </Link>
 

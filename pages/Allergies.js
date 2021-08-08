@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Allergy from './components/Allergy';
 import { useState } from 'react';
 import { useSelector, useDispatch} from "react-redux"
+import {removeAllergy} from "./redux/Allergies";
 
 
 export default function Allergies () {
@@ -63,7 +64,8 @@ export default function Allergies () {
       
       <Link href="/Settings">
         <a>
-          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"> Done</button>
+          <button className="border-1 p-4 text-2xl shadow-md rounded-xl p-2"
+            onClick={()=>dispatch(removeAllergy("NONE OF THE ABOVE"))}> Done</button>
         </a>
       </Link>
 
