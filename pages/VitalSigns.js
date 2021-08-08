@@ -45,7 +45,7 @@ export default function Personal() {
             
             <div className=" mt-4">
               <h3>TEMPERATURE:</h3>
-              <input className="shadow-lg py-2 my-2 w-1/4 border-2" 
+              <input className=" py-2 my-2 w-1/4 border-2" 
                 type="number" name="temperature"></input>
               <select className="ml-4 border-2 py-2 my-2" > 
                   <option value="Celsius"> Celsius </option>
@@ -65,7 +65,7 @@ export default function Personal() {
             <div className="mt-4">
               <h3>OXYGEN SATURATION:</h3>
               <div className="flex">
-                <input className="shadow-lg py-2 my-2 w-1/4 border-2" 
+                <input className=" py-2 my-2 w-1/4 border-2" 
                   type="number" name="temperature"></input>
                 <p className="ml-4 py-2 my-2">%</p>
               </div>
@@ -74,7 +74,7 @@ export default function Personal() {
             <div className="mt-4">
               <h3>DEVICE USED:</h3>
               <div className="flex">
-                <input className="shadow-lg py-2 my-2 w-3/4 border-2" 
+                <input className=" py-2 my-2 w-3/4 border-2" 
                   type="text" name="temperature"></input>
               </div>
               </div>

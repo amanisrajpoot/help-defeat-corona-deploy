@@ -1,20 +1,22 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import History from './components/History';
-import HistoryNone from './components/HistoryNone';
+import { useSelector, useDispatch} from "react-redux"
+import { addMedicalHistory, removeMedicalHistory, removeAllMedicalHistory } from "./redux/reducers/MedicalHistory"
 
 export default function MedicalHistory () {
   const [active, setActive] = useState(false);
+
+  const medicalHistory = useSelector(state => state.MedicalHistory);
+  const dispatch = useDispatch()
 
   const handleClick = () => {
     setActive(!active);
   };
 
-
-
   return (
     <>
-    <div className="flex justify-center items-center space-x-32 w-full">
+    <div className="flex justify-center items-center space-x-32">
       
       <div className="flex items-center w-3/5 m-4 p-4 border-2 
          text-xl bg-white h-18">
@@ -27,21 +29,33 @@ export default function MedicalHistory () {
 
           
           <div class="flex text-sm uppercase rounded-lg ml-4 flex-wrap w-full flex-around">
-            <History history="Heart Disease"/>
-            <History history="High Blood Pressure"/>
-            <History history="Lung Disease"/> 
-            <History history="Diabetes"/> 
-            <History history="NEUROLOGICAL DISEASE"/> 
-            <History history="KIDNEY/LIVER FAILURE"/> 
-            <History history="CANCER"/>
-            <History history="WEAKENED IMMUNITY DUE TO DISEASE (HIV)"/>
-            <History history="SMOKER"/> 
-            <History history="PREGNANT"/> 
-            <History history="SEVERE OBESITY"/>
+            <History present={medicalHistory.find(history=>history== "Heart Disease")}
+              history="Heart Disease"/>
+            <History present={medicalHistory.find(allergy=>allergy== "High Blood Pressure")}
+              history="High Blood Pressure"/>
+            <History present={medicalHistory.find(allergy=>allergy== "Lung Disease")}
+              history="Lung Disease"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "Diabetes")}
+              history="Diabetes"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "NEUROLOGICAL DISEASE")}
+              history="NEUROLOGICAL DISEASE"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "KIDNEY/LIVER FAILURE")}
+              history="KIDNEY/LIVER FAILURE"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "CANCER")}
+              history="CANCER"/>
+            <History present={medicalHistory.find(allergy=>allergy== "WEAKENED IMMUNITY DUE TO DISEASE (HIV)")}
+              history="WEAKENED IMMUNITY DUE TO DISEASE (HIV)"/>
+            <History present={medicalHistory.find(allergy=>allergy== "SMOKER")}
+              history="SMOKER"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "PREGNANT")}
+              history="PREGNANT"/> 
+            <History present={medicalHistory.find(allergy=>allergy== "SEVERE OBESITY")}
+              history="SEVERE OBESITY"/>
           </div>
 
-          <div className="flex justify-center ml-4 text-sm w-full">
-            <HistoryNone historyNone="NONE OF THE ABOVE" />
+          <div className="flex flex-wrap justify-center ml-4 text-sm w-full">
+            <History present={medicalHistory.find(history=>history== "NONE OF THE ABOVE")}
+              history="NONE OF THE ABOVE"/>
           </div>
 
         </div> 

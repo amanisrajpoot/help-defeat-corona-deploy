@@ -29,7 +29,7 @@ export default function Reminder()  {
 
   return (
     <>
-        <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 bg-white text-xl font-roboto">
+        <div className="flex-row space-y-2 h-auto m-8 p-4 border-2 bg-white text-xl font:roboto">
         
           <div className="flex-col text-gray-900 p-2 m-2 ">
             <p className="text-2xl">{day} {month}, {year}</p>

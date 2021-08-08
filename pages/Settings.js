@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useSelector, useDispatch} from "react-redux"
 
 export default function Settings () {
   const [active, setActive] = useState(false);
@@ -11,34 +12,14 @@ export default function Settings () {
                                                 gender:'Male', 
                                                 race:'', 
                                                 ethnicity:''});
-  const [allergies, setAllergies] = useState({  "Heart Disease":false,
-                                                "High Blood Pressure":false,
-                                                "Lung Disease":false,
-                                                "Diabetes":false,
-                                                "NEUROLOGICAL DISEASE":true,
-                                                "KIDNEY/LIVER FAILURE":false, 
-                                                "CANCER":false,
-                                                "WEAKENED IMMUNITY DUE TO DISEASE (HIV)":false,
-                                                "SMOKER":false,
-                                                "PREGNANT":false,
-                                                "SEVERE OBESITY":false
-                                              });
-      const [medical, setMedical] = useState({  "Heart Disease":false,
-                                                "High Blood Pressure":false,
-                                                "Lung Disease":false,
-                                                "Diabetes":false,
-                                                "NEUROLOGICAL DISEASE":false,
-                                                "KIDNEY/LIVER FAILURE":false, 
-                                                "CANCER":false, 
-                                                "WEAKENED IMMUNITY DUE TO DISEASE (HIV)":false,
-                                                "SMOKER":false, 
-                                                "PREGNANT":false,
-                                                "SEVERE OBESITY":false
-                                              });
 
   const handleClick = () => {
     setActive(!active);
   };
+
+  const allergies = useSelector(state => state.Allergies);
+  const medicalHistory = useSelector(state => state.MedicalHistory);
+  const dispatch = useDispatch()
 
   return (
     <div className="flex flex-col items-center">
@@ -81,7 +62,7 @@ export default function Settings () {
           </div> 
 
            <div className="p-2 space-y-2 pl-16">
-              {/*allergies.map(allergy=>(allergy===true? <div>{allergy}</div>:""))*/}
+              {allergies.map(allergy=> allergy !== "NONE OF THE ABOVE" && <div>{allergy}</div>)}
               <div>CANCER </div>
               <div>SMOKER</div>
               
@@ -97,6 +78,7 @@ export default function Settings () {
           </div> 
 
            <div className="p-2 space-y-2 pl-16">
+              {medicalHistory.map(medicalHistory=> medicalHistory !== "NONE OF THE ABOVE" && <div>{medicalHistory}</div>)}
               <div>HEART DISEASE </div>
               <div>KIDNEY/LIVER FAILURE</div>
               
