@@ -1,52 +1,42 @@
-export function addUserDetails(userDetails) {
+export function addSymptom(symptom) {
     return {
-        type: "ADD_DETAILS",
-        payload: userDetails
+        type: "ADD_SYMPTOM",
+        payload: symptom
 
     }
 }
 
-export function removeUserDetails(userDetails) {
+export function removeSymptom(symptom) {
     return {
-        type: "REMOVE_DETAILS",
-        payload: userDetails
+        type: "REMOVE_SYMPTOM",
+        payload: symptom
     }
 }
 
-export function removeAllUserDetails() {
+export function removeAllSymptom() {
     return {
-        type: "REMOVE_ALL_DETAILS"
+        type: "REMOVE_ALL_SYMPTOM"
     }
 }
 
-const details = {"firstName": 'Mayank',
-                    "lastName": 'Dubey',
-                     "email": 'dmayank0@gmail.com', 
-                     "password": '', 
-                     "dob":'2017-08-29', 
-                     "location": '110016', 
-                     "gender":'Male', 
-                     "race":'', 
-                     "ethnicity":''
-                    }
 
-export default function DailySymptomsReducer(userDetails = details, action) {
+export default function AllergiesReducer(dailySymptoms = [], action) {
     switch(action.type) {
-        case "ADD_DETAILS":
-            return {
-                ...userDetails,
-                ...action.payload
-            }
-        case "REMOVE_DETAILS":{
-            const tempArray = {...userDetails};
-            const newArray = tempArray.filter(details => details !== action.payload);
+        case "ADD_SYMPTOM":
+            return [
+                ...dailySymptoms,
+                action.payload
+            ]
+        case "REMOVE_SYMPTOM":{
+            const tempArray = [...dailySymptoms];
+            const newArray = tempArray.filter(symptom => symptom !== action.payload);
             
             return newArray
         }
-        case "REMOVE_ALL_DETAILS":
-            return {};
+        case "REMOVE_ALL_SYMPTOM":
+            return [];
             
         default:
-            return userDetails
+            return dailySymptoms
     }
 }

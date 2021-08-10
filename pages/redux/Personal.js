@@ -1,6 +1,6 @@
-export function addUserDetails(userDetails) {
+export function swicthQuestion(userDetails) {
     return {
-        type: "ADD_DETAILS",
+        type: "TOGGLE",
         payload: userDetails
 
     }
@@ -13,29 +13,16 @@ export function removeUserDetails(userDetails) {
     }
 }
 
-export function removeAllUserDetails() {
-    return {
-        type: "REMOVE_ALL_DETAILS"
-    }
-}
+const details = {"exposed": false,
+                 "feeling": false
+                }
 
-const details = {"firstName": 'Mayank',
-                    "lastName": 'Dubey',
-                     "email": 'dmayank0@gmail.com', 
-                     "password": '', 
-                     "dob":'2017-08-29', 
-                     "location": '110016', 
-                     "gender":'Male', 
-                     "race":'', 
-                     "ethnicity":''
-                    }
-
-export default function PersonalReducer(userDetails = details, action) {
+export default function PersonalReducaction.payloader(userDetails = details, action) {
     switch(action.type) {
-        case "ADD_DETAILS":
+        case "TOGGLE":
             return {
                 ...userDetails,
-                ...action.payload
+                
             }
         case "REMOVE_DETAILS":{
             const tempArray = {...userDetails};
